@@ -1,6 +1,9 @@
 name: Delete package
 
 on: [workflow_dispatch]
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   delete-package:
