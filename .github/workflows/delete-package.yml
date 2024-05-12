@@ -1,0 +1,18 @@
+#
+name: Delete package
+
+on: [workflow_dispatch]
+permissions:
+  packages: delete
+  contents: read
+jobs:
+  # This pushes the image to GitHub Packages.
+  delete-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/delete-package-versions@v5
+        with:
+          owner: 'github'
+          package-name: 'publish-packages/game'
+          package-type: 'container'
+          token: ${{ github.token }}
