@@ -1,9 +1,7 @@
 name: Delete package
 
 on: [workflow_dispatch]
-permissions:
-  contents: read
-  packages: write
+
 
 jobs:
   delete-package:
@@ -12,6 +10,6 @@ jobs:
       - uses: actions/delete-package-versions@v5
         with:
           package-name: 'publish-packages/game'
+          package-version-ids: 'sha-863a30d'
           package-type: 'container'
-          min-versions-to-keep: 0
-          token: ${{ secrets.DELETE_PACKAGE}}
+       
