@@ -2,9 +2,7 @@
 name: Delete package
 
 on: [workflow_dispatch]
-permissions:
-  packages: write
-  contents: read
+
 jobs:
   # This pushes the image to GitHub Packages.
   delete-package:
