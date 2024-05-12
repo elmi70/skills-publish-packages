@@ -10,6 +10,6 @@ jobs:
       - uses: actions/delete-package-versions@v5
         with:
           package-name: 'publish-packages/game'
-          package-version-ids: 'sha-863a30d'
+          package-version-ids: 'sha256:94f2723a7eec4fac621d91741f20676931008b5375acb9f696e4c7685444d9a7'
           package-type: 'container'
        
