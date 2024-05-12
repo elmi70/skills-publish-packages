@@ -12,7 +12,6 @@ jobs:
     steps:
       - uses: actions/delete-package-versions@v5
         with:
-          owner: 'github'
           package-name: 'publish-packages/game'
           package-type: 'container'
           token: ${{ github.token }}
