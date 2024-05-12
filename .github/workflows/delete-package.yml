@@ -10,4 +10,4 @@ jobs:
         with:
           package-name: 'publish-packages/game'
           package-type: 'container'
-          token: ${{ secrets.GITHUB_TOKEN}}
+          token: ${{ secrets.DELETE_PACKAGE}}
