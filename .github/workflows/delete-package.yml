@@ -16,4 +16,4 @@ jobs:
           package-name: 'publish-packages/game'
           package-type: 'container'
           min-versions-to-keep: 0
-          token: ${{ github.token }}
+          token: ${{ secrets.GITHUB_TOKEN}}
